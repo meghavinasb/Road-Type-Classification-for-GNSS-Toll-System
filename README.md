@@ -8,6 +8,8 @@ The classification is based on GNSS data, including latitude, longitude, speed, 
 
 The data used for classification is GNSS data gathered from satellites.
 
+This project classifies roads into two categories: **Highway** and **Service Road** using a machine learning model trained on a synthetic dataset. The goal is to assist in various GNSS (Global Navigation Satellite System) applications where road type information is crucial for route planning, autonomous driving, and safety.
+
 ## Motivation/Background:
 
 ### 1. **Infrastructure Cost Reduction**
@@ -54,10 +56,6 @@ The data used for classification is GNSS data gathered from satellites.
 - **Traditional Tolling**: Drivers pay a fixed fee at toll booths, often overpaying for unused road sections.
 - **GNSS Tolling**: Drivers are charged only for the exact distance they travel, ensuring fairness. This distance-based charging eliminates the issue of paying for road sections that aren't used.
 
-# Road Classification Using Machine Learning
-
-## Overview
-This project classifies roads into two categories: **Highway** and **Service Road** using a machine learning model trained on a synthetic dataset. The goal is to assist in various GNSS (Global Navigation Satellite System) applications where road type information is crucial for route planning, autonomous driving, and safety.
 
 ## Key Features
 - **Binary Road Classification**: Distinguishes between highways and service roads based on input data.
