@@ -87,6 +87,14 @@ The confusion matrix below shows the correct and incorrect classifications:
 - **31** false negatives for service roads (incorrectly classified as highways).
 - **0** false positives for highways.
 
+
+## Usage:
+1. **Install Required Libraries**: Ensure that `pandas` is installed in your Python environment. You can install it via pip:
+   ```bash
+   pip install pandas
+2. **Install Required Libraries**: Ensure that `scikit-learn` is installed in your Python environment. You can install it via pip:
+   ```bash
+   pip install scikit-learn
 ## Technologies used:
 
 - **Programming language**: Python
