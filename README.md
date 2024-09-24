@@ -1,5 +1,5 @@
 # Project Title:  
-**Road Type Classification for GNSS Data**
+**Road Type Classification for GNSS Toll System**
 
 ## Description:
 Road Type Classification is crucial in GNSS-based toll systems for calculating toll or usage costs. The cost of using a service road is significantly lower than that of a highway, and this project focuses on classifying road types to determine toll charges accurately.
