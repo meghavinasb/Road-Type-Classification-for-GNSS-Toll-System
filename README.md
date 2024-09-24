@@ -54,7 +54,44 @@ The data used for classification is GNSS data gathered from satellites.
 - **Traditional Tolling**: Drivers pay a fixed fee at toll booths, often overpaying for unused road sections.
 - **GNSS Tolling**: Drivers are charged only for the exact distance they travel, ensuring fairness. This distance-based charging eliminates the issue of paying for road sections that aren't used.
 
+# Road Classification Using Machine Learning
+
+## Overview
+This project classifies roads into two categories: **Highway** and **Service Road** using a machine learning model trained on a synthetic dataset. The goal is to assist in various GNSS (Global Navigation Satellite System) applications where road type information is crucial for route planning, autonomous driving, and safety.
+
+## Key Features
+- **Binary Road Classification**: Distinguishes between highways and service roads based on input data.
+- **Model Performance**: Achieves **84.50%** accuracy, with detailed classification metrics provided.
+- **Confusion Matrix**: Offers insight into misclassification patterns, helpful for model improvements.
+
+## Performance Metrics
+The machine learning model was trained and evaluated on a dataset of 200 samples. Below are the key metrics for model performance:
+
+### Accuracy
+- The overall accuracy of the model is **84.50%**, meaning it correctly classifies road types in 84.50% of the cases.
+
+### Classification Report
+|               | Precision | Recall  | F1-Score | Support |
+|---------------|-----------|---------|----------|---------|
+| **Highway**   | 0.76      | 1.00    | 0.86     | 98      |
+| **Service Road**| 1.00      | 0.70    | 0.82     | 102     |
+| **Accuracy**  |           |         | 0.84     | 200     |
+| **Macro Avg** | 0.88      | 0.85    | 0.84     | 200     |
+| **Weighted Avg** | 0.88      | 0.84    | 0.84     | 200     |
+
+### Confusion Matrix
+The confusion matrix below shows the correct and incorrect classifications:
+
+- **98** true positives for highways (correctly classified as highways).
+- **71** true positives for service roads (correctly classified as service roads).
+- **31** false negatives for service roads (incorrectly classified as highways).
+- **0** false positives for highways.
+
 ## Technologies used:
 
 - **Programming language**: Python
 - **Libraries used**: Pandas and scikit-learn
+
+## Future Improvements
+- Explore additional features and algorithms to enhance classification performance.
+- Test the model on real-world datasets.
